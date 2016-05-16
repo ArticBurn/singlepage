@@ -1,0 +1,839 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: "Open Sans", sans-serif;
+}
+body{
+	margin: 0;
+	padding: 0;
+	background-color: #ececec;
+}
+
+a{
+	text-decoration: none;
+}
+
+a:visited{
+	text-decoration: none;
+	color: #eee;
+}
+
+#navbar{
+	height: 70px;
+	width: 100%;
+	position: fixed;
+	background-color: rgba(0, 0, 0, 0.3);
+	z-index: 999;
+}
+#logo{
+	width: 30%;
+	height: 70px;
+	float: left;
+}
+
+#logo h1{
+	font-family: "Open Sans", sans-serif;
+	line-height: 70px;
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+	text-align: center; 
+	color: #fff;
+}
+
+#navbar #menu{
+	float: right;
+	width: 70%;
+	height: 70px;
+}
+
+#menu ul{
+	list-style-type: none;
+	margin-right: 50px;
+}
+
+#menu ul.drop>li{
+	float: left;
+	display: block;
+	height: 70px;
+	width: 15%;
+	float: right;
+}
+
+#menu ul.drop>li>a{
+	text-decoration: none;
+	color: #fff;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 700;
+	display: block;
+	line-height: 70px;
+	padding-left: auto;
+	padding-right: auto;
+	text-align: center;
+}
+
+#menu ul.dropdown{
+	display: none;
+}
+
+#menu ul.dropdown>li{
+	background-color: rgba(0, 0, 0, 0.3);
+	width: 200px;
+	height: 50px;
+	text-align: left;
+	line-height: 50px;
+	padding-left: 20px;
+}
+
+#menu ul.dropdown>li a{
+	text-decoration: none;
+	color: #fff;
+	font-family: "Open Sans", sans-serif;
+	display: block;
+	font-weight: 700;
+}
+
+#menu ul>li:hover{
+	background-color: rgba(242, 38, 19, 0.8);
+}
+
+#menu ul>li:hover ul.dropdown{
+	display: block;
+}
+
+#slider{
+	height: 100vh;
+	width: 100%;
+}
+
+#slider:hover img{
+	filter: saturate(1);
+}
+
+#img img{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	transition: 1s;
+	filter: saturate(0);
+	display: block;
+	visibility: hidden;
+}
+
+#slider-nav{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: block;
+	top: 0;
+	left: 0;
+}
+
+#indicator{
+	display: block;
+	width: 100%;
+	height: 15px;
+	bottom: 60px;
+	position: absolute;
+	left: 0;
+}
+
+#indicator ul{
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	height: 100%;
+	width: 100px;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding: 0;
+}
+
+#indicator li{
+	display: block;
+	list-style: none;
+	float: left;
+	background-color: rgba( 0, 0, 0, 0.9);
+	border-bottom-left-radius:15px;
+    border-top-left-radius:15px;
+    border-bottom-right-radius:15px;
+    border-top-right-radius:15px;
+    height: 100%;
+    width: 15px;
+    margin-right: 5px;
+    visibility: hidden;
+}
+
+#slider-button{
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: auto;
+	top: 50%;
+}
+
+#bLeft{
+	float: left;
+	width: 30px;
+	transition: 0.5s;
+	padding-left: 0px; 
+	opacity: 0.5;
+}
+
+#bRight{
+	float: right;
+	width: 30px;
+	transition: 0.5s;
+	padding-right: 0px; 
+	opacity: 0.5;
+}
+
+#slider:hover #bLeft{
+	padding-left: 10px;
+	opacity: 1;
+	cursor: pointer;
+}
+
+#slider:hover #bRight{
+	padding-right: 10px;
+	opacity: 1;
+	cursor: pointer;
+}
+
+#caption{
+	position: absolute;
+	display: block;
+	bottom: 0;
+	width: 100%;
+	height: 50px;
+	background-color: rgba(0,0,0,0.5);
+	text-align: center;
+}
+
+#caption p{
+	visibility: hidden;
+	font:normal 200% Arial;
+    color:#eee;
+   	line-height: 50px;
+   	margin-left: auto;
+   	margin-right: auto;
+   	width: auto;
+   	height: 50px;
+   	position: absolute;
+   	left: 10%;
+}
+
+#tour{
+	width: 100%;
+	height: 570px;
+	position: relative;
+	background-color: #ececec;
+}
+
+#tour #left, #tour #right{
+	height: 570px;
+	width: 50%;
+	background-color: inherit;
+	float: left;
+	position: relative;
+}
+
+#left h1 {
+	display: block;
+	font:normal 200% Arial;
+	text-align: center;
+	margin-top: 100px;
+}
+
+#left div#line{
+	height: 5px;
+	width: 80%;
+	background-color: rgb(242, 38, 19);
+	margin-top: 5px;
+	margin-bottom: 5px;
+	float: right;
+}
+
+#left p#open{
+	clear: both;
+	text-align: center;
+	width: 100%;
+	font-family: "Open Sans", sans-serif;
+}
+
+h2{
+	font-family: "Open Sans", sans-serif;
+}
+
+div#content ul{
+	list-style-type: none;
+}
+
+div#content li{
+	height: 30px;
+	width: 100%;
+	display: block;
+	clear: all;
+	line-height: 30px;
+	text-align: center;
+	font-weight: 700;
+}
+
+div#content li:hover{
+	background-color: rgba(242, 38, 19, 0.90);
+}
+
+div#pict{
+	height: 320px;
+	width: 90%;
+	margin-top: 100px;
+	float: right;
+	position: relative;
+}
+
+div#pict img{
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+	filter: saturate(0.3);
+	transition: all 1s;
+}
+
+div#pict:hover img{
+	filter: saturate(1);
+}
+
+#right div#line{
+	border-style: solid;
+	height: 70%;
+	width: 45%;
+	position: absolute;
+	border-right-color: rgba(242, 38, 19, 0.90); 
+	border-bottom-color: rgba(242, 38, 19, 0.90);
+	border-width: 0 5px 5px 0;
+	margin-top: 70px;
+}
+
+#right div#greet{
+	position: absolute;
+	bottom: 0;
+	border-style: solid;
+	width: 80%;
+	height: 100px;
+	border-width: 0 0 0 5px;
+	border-left-color: rgba(242, 38, 19, 0.90); 
+}
+
+#right div#greet p{
+	padding-top: 10px;
+	padding-left: 10px;
+}
+
+#right div#greet h2{
+	text-align: center;
+	line-height: 50px;
+	font-style: italic;
+}
+
+#pict div#caption{
+	position: absolute;
+	bottom: 0;
+	height: 60px;
+	width: 100%;
+	background-color: rgba(0,0,0, 0.6);
+}
+
+#pict div#caption h2{
+	color: #fff;
+	line-height: 60px;
+	font-size: 30px;
+	font-style: oblique;
+	float: right;
+	padding-right: 20px;
+}
+
+/*-------------------------------------------------------------------------------------*/
+
+div#sempu{
+	background-image: url(images/sempu1.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 500px;
+	width: 100%;
+	position: relative;
+}
+
+div#saturate{
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0,0,0, 0.3);
+	transition: all 1s;
+}
+
+div#sempu:hover #saturate{
+	background-color: rgba(0,0,0,0);
+}
+
+#sempu #hash{
+	position: absolute;
+	bottom: 20px;
+	right: 0;
+	padding-right: 50px;
+}
+
+#hash h2{
+	color: #fff;
+	font-size: 30px;
+	text-shadow: 2px 2px 2px #000;
+}
+
+#sempu #greet{
+	position: absolute;
+	background-color: rgba(0,0,0, 0.5);
+	border-width: 0 0 0 5px;
+	border-left-color: rgba(242, 38, 19, 0.90);
+	border-style: solid;
+	width: 0;
+	height: 250px;
+	top: 100px;
+	left: 50px;
+	transition: all 0.5s;
+}
+
+#sempu #greet2{
+	position: absolute;
+	border-width: 0 0 0 5px;
+	width: 50%;
+	height: 250px;
+	top: 100px;
+	left: 50px;
+}
+
+#sempu #greet2>h2{
+	color: #fff;
+	font-size: 40px;
+	text-align: center;
+}
+
+#sempu #greet2>h2#camp{
+	color: #fff;
+	font-size: 30px;
+	text-align: center;
+	font-style: oblique; 
+}
+
+#sempu #greet2>p{
+	color: #fff;
+	text-align: center;
+	width: 70%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#sempu:hover #greet{
+	width: 50%;
+}
+
+#line{
+	position: relative;
+	width: 100%;
+	height: 100px;
+}
+
+#line div#first{
+	position: absolute;
+	top: 0;
+	left: 50px;
+	border-width: 0 0 5px 5px;
+	border-style: solid;
+	border-left-color: rgba(242, 38, 19, 0.90);
+	border-bottom-color:rgba(242, 38, 19, 0.90);
+	height: 50px;
+	width: 80%;
+}
+
+#line div#second{
+	position: absolute;
+	top: 50px;
+	left: 50px;
+	border-width: 0 5px 0 0;
+	border-style: solid;
+	border-right-color: rgba(242, 38, 19, 0.90);
+	height: 50px;
+	width: 80%;
+}
+
+/*------------------------------------------------------------------------------------*/
+div#alunbatu{
+	background-image: url(images/alunbatu.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 500px;
+	width: 100%;
+	position: relative;
+}
+
+div#alunbatu:hover #saturate{
+	background-color: rgba(0,0,0,0);
+}
+
+#alunbatu #hash{
+	position: absolute;
+	bottom: 20px;
+	right: 0;
+	padding-right: 50px;
+}
+
+#alunbatu #greet{
+	position: absolute;
+	background-color: rgba(0,0,0, 0.5);
+	border-width: 0 5px 0 0;
+	border-right-color: rgba(242, 38, 19, 0.90);
+	border-style: solid;
+	width: 0;
+	height: 250px;
+	top: 100px;
+	right: 50px;
+	transition: all 0.5s;
+}
+
+#alunbatu #greet2{
+	position: absolute;
+	border-width: 0 0 0 5px;
+	width: 50%;
+	height: 250px;
+	top: 100px;
+	right: 50px;
+}
+
+#alunbatu #greet2>h2{
+	color: #fff;
+	font-size: 40px;
+	text-align: center;
+}
+
+#alunbatu #greet2>h2#camp{
+	color: #fff;
+	font-size: 30px;
+	text-align: center;
+	font-style: oblique; 
+}
+
+#alunbatu #greet2>p{
+	color: #fff;
+	text-align: center;
+	width: 70%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#alunbatu:hover #greet{
+	width: 50%;
+}
+
+#line2{
+	position: relative;
+	width: 100%;
+	height: 100px;
+}
+
+#line2 div#first{
+	position: absolute;
+	top: 0;
+	right: 50px;
+	border-width: 0 5px 5px 0;
+	border-style: solid;
+	border-right-color: rgba(242, 38, 19, 0.90);
+	border-bottom-color:rgba(242, 38, 19, 0.90);
+	height: 50px;
+	width: 80%;
+}
+
+#line2 div#second{
+	position: absolute;
+	top: 50px;
+	right: 50px;
+	border-width: 0 0 0 5px;
+	border-style: solid;
+	border-left-color: rgba(242, 38, 19, 0.90);
+	height: 50px;
+	width: 80%;
+}
+
+/*------------------------------------------------------------------------------------*/
+div#bns{
+	background-image: url(images/bns1.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 500px;
+	width: 100%;
+	position: relative;
+}
+
+div#saturate{
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0,0,0, 0.3);
+	transition: all 1s;
+}
+
+div#bns:hover #saturate{
+	background-color: rgba(0,0,0,0);
+}
+
+#bns #hash{
+	position: absolute;
+	bottom: 20px;
+	right: 0;
+	padding-right: 50px;
+}
+
+#hash h2{
+	color: #fff;
+	font-size: 30px;
+	text-shadow: 2px 2px 2px #000;
+}
+
+#bns #greet{
+	position: absolute;
+	background-color: rgba(0,0,0, 0.5);
+	border-width: 0 0 0 5px;
+	border-left-color: rgba(242, 38, 19, 0.90);
+	border-style: solid;
+	width: 0;
+	height: 250px;
+	top: 100px;
+	left: 50px;
+	transition: all 0.5s;
+}
+
+#bns #greet2{
+	position: absolute;
+	border-width: 0 0 0 5px;
+	width: 50%;
+	height: 250px;
+	top: 100px;
+	left: 50px;
+}
+
+#bns #greet2>h2{
+	color: #fff;
+	font-size: 40px;
+	text-align: center;
+}
+
+#bns #greet2>h2#camp{
+	color: #fff;
+	font-size: 30px;
+	text-align: center;
+	font-style: oblique; 
+}
+
+#bns #greet2>p{
+	color: #fff;
+	text-align: center;
+	width: 70%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#bns:hover #greet{
+	width: 50%;
+}
+
+/*------------------------------------------------------------------------------------*/
+div#bromo{
+	background-image: url(images/bromo.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 500px;
+	width: 100%;
+	position: relative;
+}
+
+div#bromo:hover #saturate{
+	background-color: rgba(0,0,0,0);
+}
+
+#bromo #hash{
+	position: absolute;
+	bottom: 20px;
+	right: 0;
+	padding-right: 50px;
+}
+
+#bromo #greet{
+	position: absolute;
+	background-color: rgba(0,0,0, 0.5);
+	border-width: 0 5px 0 0;
+	border-right-color: rgba(242, 38, 19, 0.90);
+	border-style: solid;
+	width: 0;
+	height: 250px;
+	top: 100px;
+	right: 50px;
+	transition: all 0.5s;
+}
+
+#bromo #greet2{
+	position: absolute;
+	border-width: 0 0 0 5px;
+	width: 50%;
+	height: 250px;
+	top: 100px;
+	right: 50px;
+}
+
+#bromo #greet2>h2{
+	color: #fff;
+	font-size: 40px;
+	text-align: center;
+}
+
+#bromo #greet2>h2#camp{
+	color: #fff;
+	font-size: 30px;
+	text-align: center;
+	font-style: oblique; 
+}
+
+#bromo #greet2>p{
+	color: #fff;
+	text-align: center;
+	width: 70%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#bromo:hover #greet{
+	width: 50%;
+}
+
+/*------------------------------------------------------------------------------------*/
+div#warna{
+	background-image: url(images/warna3.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	height: 500px;
+	width: 100%;
+	position: relative;
+}
+
+div#saturate{
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0,0,0, 0.3);
+	transition: all 1s;
+}
+
+div#warna:hover #saturate{
+	background-color: rgba(0,0,0,0);
+}
+
+#warna #hash{
+	position: absolute;
+	bottom: 20px;
+	right: 0;
+	padding-right: 50px;
+}
+
+#hash h2{
+	color: #fff;
+	font-size: 30px;
+	text-shadow: 2px 2px 2px #000;
+}
+
+#warna #greet{
+	position: absolute;
+	background-color: rgba(0,0,0, 0.5);
+	border-width: 0 0 0 5px;
+	border-left-color: rgba(242, 38, 19, 0.90);
+	border-style: solid;
+	width: 0;
+	height: 250px;
+	top: 100px;
+	left: 50px;
+	transition: all 0.5s;
+}
+
+#warna #greet2{
+	position: absolute;
+	border-width: 0 0 0 5px;
+	width: 50%;
+	height: 250px;
+	top: 100px;
+	left: 50px;
+}
+
+#warna #greet2>h2{
+	color: #fff;
+	font-size: 40px;
+	text-align: center;
+}
+
+#warna #greet2>h2#camp{
+	color: #fff;
+	font-size: 30px;
+	text-align: center;
+	font-style: oblique; 
+}
+
+#warna #greet2>p{
+	color: #fff;
+	text-align: center;
+	width: 70%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#warna:hover #greet{
+	width: 50%;
+}
+/*-------------------------------------------------------------------------------------*/
+div#contact div#a{
+	position: absolute;
+	top: 120px;
+	left: 50px;
+	width: 60%;
+	height: auto;
+	border-width: 0 0 0 5px;
+	border-left-color: rgba(242, 38, 19, 0.90);
+	border-style: solid;
+	padding-left: 10px;
+}
+
+div#social{
+	position: absolute;
+	bottom: 50px;
+	left: 50px;
+	width: auto;
+	height: auto;
+}
+
+div#social img{
+	float: left;
+	width: 50px;
+	padding: 10px;
+}
+
+div#social img:hover{
+	background-color: rgb(242, 38, 19);
+}
+
+div#about div#signature{
+	float: right;
+	width: auto;
+	height: 50px;
+	line-height: 50px;
+	color: #fff;
+	padding-right: 20px; 
+}
+
+/*ivanandika copyright*/

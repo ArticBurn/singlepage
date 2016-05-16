@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Wisata Malang</title>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<script src="js/imageSlide.js"></script>
+</head>
+<body onload="slide()">
+	<div id="navbar">
+		<div id="logo">
+			<h1>
+				<a href="#">WISATA MALANG</a>
+			</h1>
+
+		</div>
+		<div id="menu">
+			<ul class="drop">
+				<li><a href="#about">ABOUT</a></li>
+				<li><a href="#contact">CONTACT</a></li>
+				<li><a href="#tour">TOUR +</a>
+					<ul class="dropdown">
+						<li><a href="#sempu">Pulau Sempu</a></li>
+						<li><a href="#alunbatu">Alun-alun Batu</a></li>
+						<li><a href="#bns">BNS</a></li>
+						<li><a href="#bromo">Gunung Bromo</a></li>
+						<li><a href="#warna">Danau Tiga Warna</a></li>
+					</ul>
+				</li>
+				<li><a href="#">HOME</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="slider">
+		<div id="img">
+			<img id="img1" src="images/sempu.jpg" alt="Pulau Sempu">
+			<img id="img2" src="images/alunbatu1.jpg" alt="Alun-alun Batu">
+			<img id="img3" src="images/bns.jpg" alt="Batu Night Spectaculer">
+			<img id="img4" src="images/bromo.jpg" alt="Gunung Bromo">
+			<img id="img5" src="images/3warna.jpg" alt="Danau Tiga Warna">
+		</div>
+		<div id="silder-nav">
+			<div id="slider-button">
+				<img id="bLeft" src="images/prev.png" alt="Prev" onclick="prev()">
+				<img id="bRight" src="images/next.png" alt="Next" onclick="next()">
+			</div>
+			<div id="indicator">
+				<ul>
+					<li id="indicator0"></li>
+					<li id="indicator1"></li>
+					<li id="indicator2"></li>
+					<li id="indicator3"></li>
+					<li id="indicator4"></li>
+				</ul>
+			</div>
+		</div>
+		<div id="caption">
+		<center>
+			<p id="caption0">Pulau Sempu</p>
+			<p id="caption1">Alun-alun Batu</p>
+			<p id="caption2">Batu Night Spectaculer</p>
+			<p id="caption3">Gunung Bromo</p>
+			<p id="caption4">Danau Tiga Warna</p>
+		</center>	
+		</div>
+	</div>
+	<div id="tour">
+		<div id="left">
+			<h1>Welcome to Malang Tourism</h1>
+			<div id="line"></div>
+			<div id="content" style="text-align: center; width: 80%; float: right;">
+				<p id="open">
+					<strong>Kota Malang</strong> adalah kota wisata yang terkenal dengan sejuk dan indahnya. Salah satunya yang terkenal dengan view yang indah dan spot yang keren adalah Gunung Bromo.
+				</p>
+			</div>
+
+			<div id="content" style="text-align: left; width: 80%; float: right; margin-top: 20px;">
+				<p id="spot">
+					<h2>SPOT WISATA :</h2>
+				</p>
+				<ul>
+					<li>Pulau Sempu</li>
+					<li>Alun-alun Batu</li>
+					<li>Batu Night Spectaculer</li>
+					<li>Gunung Bromo</li>
+					<li>Danau Tiga Warna</li>
+				</ul>
+			</div>
+		</div>
+		<div id="right">
+			<div id="line"></div>
+			<div id="pict">
+				<img src="images/balekambang.jpg" alt="Balekambang">
+				<div id="caption">
+					<h2>
+						BALEKAMBANG
+					</h2>
+				</div>
+			</div>
+			<div id="greet">
+				<p>Lebih dari 10K pengunjung mengunjungi Pantai Balekambang.</p>
+				<h2>"AND THEY HAVE A PARTY"</h2>
+			</div>
+		</div>
+	</div>
+	<div id="sempu">
+		<div id="saturate"></div>
+		<div id="greet"></div>
+		<div id="greet2">
+			<h2>LAGUNA INDONESIA</h2>
+			<p>
+				Sempu adalah laguna milik Indonesia. Spot terbaik untuk <i>pre-wedding</i> dan <i>selfie</i>.
+			</p>
+			<br>
+			<p>
+				Lebih dari 15k wisatawan berkemah disini.
+			</p>
+			<h2 id="camp">
+				"AND THEY HAVE A CAMP"
+			</h2>
+		</div>
+		<div id="hash">
+			<h2>#laguna_pulaujawa</h2>
+		</div>
+	</div>
+	<div id="line">
+		<div id="first"></div>
+		<div id="second"></div>
+	</div>
+	<div id="alunbatu">
+		<div id="saturate"></div>
+		<div id="greet"></div>
+		<div id="greet2">
+			<h2>SPOT LONGUE</h2>
+			<p>
+				Alun - alun Batu adalah tempat santai dan nongkrong yang asik untuk remaja.
+			</p>
+			<br>
+			<p>
+				Lebih dari 20k teenager nongkrong disini.
+			</p>
+			<h2 id="camp">
+				"AND THEY HAVE A LONGUE"
+			</h2>
+		</div>		
+		<div id="hash">
+			<h2>#spot_longue</h2>
+		</div>
+	</div>
+	<div id="line2">
+		<div id="first"></div>
+		<div id="second"></div>
+	</div>
+	<div id="bns">
+		<div id="saturate"></div>
+		<div id="greet"></div>
+		<div id="greet2">
+			<h2>VIRTUAL SPOT</h2>
+			<p>
+				Batu Night Spectaculer. Spot keren saat malam hari, ketika kamu stalking bersama teman-teman.
+			</p>
+			<br>
+			<p>
+				Lebih dari 20k orang stalking disini.
+			</p>
+			<h2 id="camp">
+				"AND THEY HAVE A STALK"
+			</h2>
+		</div>
+		<div id="hash">
+			<h2>#batunight_spectacular</h2>
+		</div>
+	</div>
+	<div id="line">
+		<div id="first"></div>
+		<div id="second"></div>
+	</div>	
+	<div id="bromo">
+		<div id="saturate"></div>
+		<div id="greet"></div>
+		<div id="greet2">
+			<h2>Savana Traveling</h2>
+			<p>
+				Gunung Bromo adalah pilihan utama wisata Malang. Terutama padang pasir yang terhampar luas.
+			</p>
+			<br>
+			<p>
+				Lebih dari 25k traveller disini.
+			</p>
+			<h2 id="camp">
+				"AND THEY HAVE A GOOD TRAVEL"
+			</h2>
+		</div>		
+		<div id="hash">
+			<h2>#savana_traveling</h2>
+		</div>
+	</div>
+	<div id="line2">
+		<div id="first"></div>
+		<div id="second"></div>
+	</div>
+	<div id="warna">
+		<div id="saturate"></div>
+		<div id="greet"></div>
+		<div id="greet2">
+			<h2>LONG WAY TRIP</h2>
+			<p>
+				Danau tiga warna adalah spot terakhir dari wisata. Sangat nyaman dan relax untuk menghabiskan waktu bersama semuanya.
+			</p>
+			<br>
+			<p>
+				Lebih dari 40k pengunjung disini.
+			</p>
+			<h2 id="camp">
+				"AND THEY HAVE A LONG TRIP"
+			</h2>
+		</div>
+		<div id="hash">
+			<h2>#longway_trip</h2>
+		</div>
+	</div>			
+	<div style="width: 100%; height: 300px; background-color: #ececec; position: relative;" id="contact">
+
+		<div id="a">
+			<p>Bagaimana? Ingin tripping ke kota Malang?</p>
+			<h1>WE'RE WAITING FOR YOU!</h1>
+		</div>
+		<div id="social">
+			<a href="#"><img src="images/f.png" alt="facebook"></a>
+			<a href="#"><img src="images/t.png" alt="twitter"></a>
+			<a href="#"><img src="images/y.png" alt="youtube"></a>
+		</div>
+	</div>
+	<div style="width: 100%; height: 50px; background-color: rgba(242, 38, 19, 0.90); position: relative;" id="about">
+		<div id="signature">
+			<span>Designed: Ivan Andika</span>
+		</div>
+	</div>
+</body>
+</html>
